@@ -4,11 +4,17 @@
 
 body {
     text-align: center;
+    background-image: url(http://ssg.flor.cz/img/bg-darker.png);
 }
 
 p {
     color: rgb(19, 50, 51);
     font-family: Arial, sans-serif;
+}
+
+p span {    
+    background: rgba(255, 255, 255, 0.71);
+    padding: 1em;
 }
 
 p a.textlink {
@@ -28,7 +34,7 @@ p a.textlink {
     margin: 1em 2em 2em 0;
     width: 200px;
     border-radius: 6px;
-    background: #00e5ff;
+    background: white;
     position: relative;
     overflow: hidden;
     text-decoration: none;
@@ -38,7 +44,7 @@ p a.textlink {
     border: none;
     width: 100%;
     height: auto;
-    opacity: 0.9;
+    opacity: 0.93;
     border-radius: 6px;
     margin-bottom: -5px;
 }
@@ -46,17 +52,17 @@ p a.textlink {
 /* transition definition */
 
 .gallery a, .gallery a img, .gallery a::before, .gallery a::after  {
-    transition: all 0.16s ease-in;
+    transition: all 0.12s ease-in;
 }
 
 .gallery  a:hover, .gallery a:hover img, .gallery a:hover::before, .gallery a:hover:after {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease;
 }
 
 /* hover definition - skew and shadow */
 
 .gallery  a:hover {
-    box-shadow: 5px 3px 13px 1px rgba(0, 49, 49, 0.96);
+    box-shadow: 4px 6px 13px 1px rgba(13, 13, 13, 0.73);
     transform: skew(-2deg, -2deg) scale(0.965, 0.965);
     background: rgb(69, 69, 69);
     color: #00e5ff;
