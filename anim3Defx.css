@@ -1,38 +1,10 @@
 
 /* ≈Photorealistic, ≈3D animated effect in CSS3 created by Roman Flössler */
 
-
-body {
-    text-align: center;
-    background-image: url(http://ssg.flor.cz/img/bg-darker.png);
-}
-
-p {
-    color: rgb(19, 50, 51);
-    font-family: Arial, sans-serif;
-}
-
-p span {    
-    background: rgba(255, 255, 255, 0.71);
-    padding: 1em;
-}
-
-p a.textlink {
-    padding: 1em;
-    background: #e0e0e0;
-}
-
-.gallery {
-    line-height: 1em;
-    position: relative;
-    top: 16vh;
-}
-
 .gallery a {
     color: #d40039;
     display: inline-block;
-    margin: 1em 2em 2em 0;
-    width: 200px;
+    margin: 10px;    
     border-radius: 6px;
     background: white;
     position: relative;
@@ -96,11 +68,12 @@ p a.textlink {
 .gallery > a::after {
     content: '»';
     position: absolute;
-    top:6px;
+    top: 6px;
     right: 10px;
     color: white;
     transform: rotate(-45deg);
     font-size: 155%;
+    line-height: 0.6em;
     font-family: 'Times New Roman', Arial, sans-serif;
     opacity: 0.5;
     text-shadow: 0 0 6px #000000, 0 0 6px #000000, 0 0 9px #000000, 0 0 9px #000000, 0 0 9px #000000, 0 0 13px #000000, 0 0 13px #000000, 0 0 19px #000000, 0 0 19px #000000;
